@@ -82,7 +82,7 @@
 &kp Q           &kp L         &kp U         &kp MINUS  &kp COMMA                                                             &kp F        &kp W  &kp R  &kp Y  &kp P
 &kp E           &kp I         &kp A         &kp O      &kp PERIOD             &kp LS(LG(S))      &none                       &kp K        &kp T  &kp N  &kp S  &kp H
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C      &kp V                  &none              &none                       &kp G        &kp D  &kp M  &kp J  &kp B
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mo 5      &lt_to_layer_0 3 CAPS  &lt 4 SPACE        &lt_to_layer_0 2 BACKSPACE  &lt 1 ENTER                       &kp DELETE
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mo 5      &lt_to_layer_0 4 CAPS  &lt 5 SPACE        &lt_to_layer_0 2 BACKSPACE  &lt 1 ENTER                       &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -119,10 +119,10 @@
 
         MOUSE {
             bindings = <
-&kp ESC  &trans    &kp UP    &trans     &trans                      &trans  &trans    &trans    &trans    &trans
-&trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans   &trans    &trans    &trans     &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans   &trans    &trans    &trans     &trans  &trans      &trans  &trans                                &trans
+&kp ESC  &trans    &kp UP    &trans     &trans                          &trans  &trans  &trans  &trans  &trans
+&trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans        &mkp MB2  &trans  &trans  &trans  &trans  &trans
+&trans   &trans    &trans    &trans     &trans  &mkp MB3      &mkp MB1  &trans  &trans  &trans  &trans  &trans
+&trans   &trans    &trans    &trans     &trans  &trans        &trans    &trans                          &trans
             >;
         };
 
