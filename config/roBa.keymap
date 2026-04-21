@@ -90,19 +90,19 @@
 
         NUM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                              &trans
+&none  &none  &none  &none  &none                    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none
+&none  &none  &none  &none  &none  &none      &none  &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
+&none  &none  &none  &none  &none  &none      &none  &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
+&none  &none  &none  &none  &none  &none      &none  &trans                                                              &none
             >;
         };
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                &trans
+&none  &none  &none  &none  &none                     &none  &kp EXCLAMATION  &trans       &kp HASH  &none
+&none  &none  &none  &none  &none  &none      &none   &none  &kp DOLLAR       &kp PERCENT  &trans    &none
+&none  &none  &none  &none  &none  &none      &none   &none  &trans           &trans       &trans    &none
+&none  &none  &none  &none  &none  &none      &trans  &none                                          &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -110,19 +110,19 @@
 
         SYMBOL2 {
             bindings = <
-&kp TAB   &kp TILDE      &kp CARET     &kp EQUAL    &trans                      &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans    &kp PIPE       &kp GRAVE     &kp AT_SIGN  &trans  &trans      &trans  &trans  &kp LESS_THAN   &kp GREATER_THAN  &kp QUESTION      &kp SLASH
-&kp PLUS  &kp SEMICOLON  &kp ASTERISK  &kp COLON    &trans  &trans      &trans  &trans  &kp UNDERSCORE  &kp BACKSLASH     &trans            &trans
-&trans    &trans         &trans        &trans       &trans  &trans      &trans  &trans                                                      &trans
+&kp TAB  &trans         &trans  &trans  &none                     &none  &trans         &trans            &trans        &trans
+&none    &trans         &trans  &trans  &none   &none      &none  &none  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp SLASH
+&trans   &kp SEMICOLON  &trans  &trans  &none   &none      &none  &none  &trans         &trans            &none         &none
+&none    &none          &none   &none   &trans  &none      &none  &none                                                 &none
             >;
         };
 
         MOUSE {
             bindings = <
-&kp ESC  &trans    &kp UP    &trans     &trans                        &trans  &trans    &trans  &trans  &trans
-&trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans      &mkp MB2  &trans  &mkp MB1  &trans  &trans  &trans
-&trans   &trans    &trans    &trans     &trans  &trans      &mkp MB3  &trans  &trans    &trans  &trans  &trans
-&trans   &trans    &trans    &trans     &trans  &trans      &trans    &trans                            &trans
+&kp ESC  &none     &kp UP    &none      &none                        &none  &none     &none  &none  &none
+&none    &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none       &mkp MB2  &none  &mkp MB1  &none  &none  &none
+&none    &none     &none     &none      &none  &none       &mkp MB3  &none  &none     &none  &none  &none
+&none    &none     &none     &none      &none  &trans      &none     &none                          &none
             >;
         };
 
