@@ -99,10 +99,10 @@
 
         symbol {
             bindings = <
-&none  &none  &none  &none  &none                     &none  &kp EXCLAMATION  &trans       &kp HASH  &none
-&none  &none  &none  &none  &none  &none      &none   &none  &kp DOLLAR       &kp PERCENT  &trans    &none
-&none  &none  &none  &none  &none  &none      &none   &none  &trans           &trans       &trans    &none
-&none  &none  &none  &none  &none  &none      &trans  &none                                          &none
+&none  &none  &none  &none  &none                     &none  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &none
+&none  &none  &none  &none  &none  &none      &none   &none  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &none
+&none  &none  &none  &none  &none  &none      &none   &none  &kp APOSTROPHE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none  &none  &none  &none  &none  &none      &trans  &none                                                                &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -110,10 +110,10 @@
 
         SYMBOL2 {
             bindings = <
-&kp TAB  &trans         &trans  &trans  &none                     &none  &trans         &trans            &trans        &trans
-&none    &trans         &trans  &trans  &none   &none      &none  &none  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp SLASH
-&trans   &kp SEMICOLON  &trans  &trans  &none   &none      &none  &none  &trans         &trans            &none         &none
-&none    &none          &none   &none   &trans  &none      &none  &none                                                 &none
+&kp TAB         &kp TILDE      &kp CARET    &kp EQUAL     &none                     &none  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none           &kp GRAVE      &kp AT_SIGN  &kp PLUS      &none   &none      &none  &none  &kp LESS_THAN   &kp GREATER_THAN  &kp QUESTION      &kp SLASH
+&kp LEFT_SHIFT  &kp SEMICOLON  &kp COLON    &kp ASTERISK  &none   &none      &none  &none  &kp UNDERSCORE  &kp BACKSLASH     &none             &none
+&none           &none          &none        &none         &trans  &none      &none  &none                                                      &none
             >;
         };
 
